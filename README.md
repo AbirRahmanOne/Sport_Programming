@@ -1,3 +1,3 @@
-# hello-world-CPPS-
-Source Code for various online judge problem. 
-testing: any change made ?
+# This repo: 
+Source Code for various algorithm code & templates.  
+
