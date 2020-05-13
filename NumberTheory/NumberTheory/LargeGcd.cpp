@@ -1,11 +1,8 @@
 
 //GCD of two numbers when one of them can be very large
 
-//Given two numbers ‘a’ and ‘b’ such that (0 <= a <= 10^12 and b <= b < 10^250). 
+//Given two numbers ‘a’ and ‘b’ such that (0 <= a <= 10^12 and b <= b < 10^250).
 //Find the GCD of two given numbers.
-
-
-
 
 
 #include<bits/stdc++.h>
@@ -16,11 +13,9 @@ using namespace std ;
 
 ll gcd(ll a , ll b)
 {
-    if(b==0 )
-    {
+    if(b==0 ){
         return a ;
     }
-
     return gcd(b ,a%b ) ;
 }
 
@@ -34,8 +29,7 @@ ll largeGcd(ll a , string b )
 {
     ll mod = 0 ;
 
-    for(int i=0 ; i<b.size() ; i++)
-    {
+    for(int i=0 ; i<b.size() ; i++){
     // calculating mod of b with a to make
     // b like 0 <= b < a
         mod = (mod*10 + b[i]-'0') % a ;
