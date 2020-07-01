@@ -1,7 +1,7 @@
 //Sample Array
 int val[] = { 60, 100, 120 };
 int wt[] = { 10, 20, 30 };
-int dp[2002][2002] ;
+int dp[1002][1002] ;
 int knapSack(int W, int n){
     //  Here W is total weight
     for(int i=0 ; i<=n ; i++){
@@ -14,7 +14,6 @@ int knapSack(int W, int n){
             }
         }
     }
-
     return dp[n][W] ;
 }
 
